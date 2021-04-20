@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            navagation
+        </title>
+        <style>
+            body{
+                background: linear-gradient(to right, rgb(102, 102, 0), rgb(153, 153, 102));
+            }
+            ul {
+                list-style-type: none;
+                position: absolute;
+                top: 8%;
+                left: 25%;
+            }
+            li {
+                display: inline-block;
+            }
+            span {
+                padding: 18px 25px;
+                font-size: 20px;
+                color: azure;
+                cursor: pointer;
+            }
+            .home 
+            {
+                border-top: thick solid rgba(185, 83, 43, 0.856);
+                background: linear-gradient(#eb6565, #da945be3);
+            }
+            .menu
+            {
+                border-top: thick solid rgb(184, 35, 35);
+                background: linear-gradient(#e6ce64, #e07e7e);
+            }
+            .about 
+            {
+                border-top: thick solid rgb(70, 55, 236);
+                background: linear-gradient(#d064e6, #9192e5);
+            }
+            .support 
+            {
+                border-top: thick solid rgba(48, 79, 182, 0.822);
+                background: linear-gradient(#6fe664, #91c3e5);
+            }
+            .contact {
+                border-top: thick solid yellow;
+                background: linear-gradient(#646de6, #e5919f);
+            }
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+            .dropdown-content {
+                margin-top: 25px;
+                display: none;
+                position: absolute;
+                background: linear-gradient(#e6a364, #9198e5);
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            }
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+            a {
+                display: block;
+                text-decoration: none;
+                padding: 12px 45px;
+                color: black;
+                border: thin solid black;
+            }
+            span:hover {
+                padding: 30px;
+                transition: .4s;
+            }
+            a:hover {
+                background-color: rgb(179, 179, 179);
+            }
+        </style>
+    </head>
+    <style></style>
+    <body>
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <span class="home"></i>HOME</span>
+                    <div class="dropdown-content">
+                        <a href="">Item 1</a>
+                        <a href="">Item 2</a>
+                        <a href="">item 3</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <span class="menu"></i>MENU</span>
+                    <div class="dropdown-content">
+                        <a href="">Item 1</a>
+                        <a href="">Item 2</a>
+                        <a href="">item 3</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <span class="about">ABOUT</span>
+                    <div class="dropdown-content">
+                        <a href="">Item 1</a>
+                        <a href="">Item 2</a>
+                        <a href="">item 3</a>
+                    </div>
+                </div>
+            </li>
+            <li><span class="support">SUPPORT</span></li>
+            <li><span class="contact">CONTACT</span></li>
+        </ul>
+        </div>
+    </body>
+</html>
